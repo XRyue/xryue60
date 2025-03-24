@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_xryue45
+if SHIELD_xryue60
 
 config ZMK_KEYBOARD_NAME
 	default "xryue60"
