@@ -1,5 +1,8 @@
-# Copyright (c) 2020 The ZMK Contributors
+# Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_xryue60
-	def_bool $(shields_list_contains,xryue60)
+config SHIELD_XRYUE60_LEFT
+    def_bool $(shields_list_contains,xryue60_left)
+
+config SHIELD_XRYUE60_RIGHT
+    def_bool $(shields_list_contains,xryue60_right)
