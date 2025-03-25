@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-//#include "xryue60.dtsi"
+#include "xryue60.dtsi"
 
 &default_transform {
     col-offset = <7>;
