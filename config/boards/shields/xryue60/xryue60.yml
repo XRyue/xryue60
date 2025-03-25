@@ -6,6 +6,8 @@ url: https://oshwhub.com/joba
 requires: [nrfmicro_13_52840]
 features:
   - keys
+  - display
+  - studio
 siblings:
   - xryue60_left
   - xryue60_right
