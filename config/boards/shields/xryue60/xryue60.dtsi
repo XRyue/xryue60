@@ -11,7 +11,8 @@
 	chosen {
 		zmk,kscan = &kscan0;
 		//zmk,underglow = &leds;
-        zmk,physical-layout = &xryue60_layout;
+        //zmk,physical-layout = &xryue60_layout;
+		zmk,matrix_transform = &default_transform;
 	};
 
 
