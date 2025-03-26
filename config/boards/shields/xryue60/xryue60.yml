@@ -8,6 +8,7 @@ features:
   - keys
   - display
   - studio
+  - encoder
 siblings:
   - xryue60_left
   - xryue60_right

@@ -19,11 +19,10 @@
 ---
 include:
    - board: nrfmicro_13
-   #- board: nrfmicro_13
      shield: xryue60_left
-     #snippet: studio-rpc-usb-uart
+     snippet: studio-rpc-usb-uart
    - board: nrfmicro_13
      shield: xryue60_right
-     #snippet: studio-rpc-usb-uart   
-   #- board: nice_nano_v2
-    # shield: settings_reset
+     snippet: studio-rpc-usb-uart   
+   - board: nice_nano_v2
+     shield: settings_reset

@@ -63,7 +63,7 @@
             label = "VLOOKUP";
         };
     };
-
+/*
     combos {
         compatible = "zmk,combos";
 
@@ -93,7 +93,7 @@
             key-positions = <5 6>;
         };
     };
-
+*/
     keymap0: keymap {
         compatible = "zmk,keymap";
 
