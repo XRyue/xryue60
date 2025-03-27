@@ -9,6 +9,7 @@ features:
   - display
   - studio
   - encoder
+  - underglow
 siblings:
   - xryue60_left
   - xryue60_right
