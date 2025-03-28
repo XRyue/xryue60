@@ -19,5 +19,4 @@ col-gpios
 };
 &left_encoder {
     status = "okay";
-	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; 
-};
+	};
