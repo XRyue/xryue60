@@ -20,3 +20,6 @@ col-gpios
 &left_encoder {
     status = "okay";
 };
+&left_encoder{
+    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; // 左旋钮控制音量
+};
