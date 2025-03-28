@@ -112,7 +112,6 @@
         b-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         //status = "okay";
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 
     right_encoder: encoder_right {
@@ -121,7 +120,6 @@
         b-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         steps = <24>;
         //status = "okay";
-        sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
     };
 /*
     sensors: sensors {
