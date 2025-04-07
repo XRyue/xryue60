@@ -67,31 +67,66 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_CAPS {
+        combo_F1 {
             #timeout-ms = <5>;
-            key-positions = <23 24>;
-            bindings = <&kp CAPS>;
+            key-positions = <1 2>;
+            bindings = <&kp F1>;
         };
-
-        combo_ctrlc {
+        combo_F2 {
+            #timeout-ms = <5>;
+            key-positions = <2 3>;
+            bindings = <&kp F2>;
+        };
+        combo_F3 {
+            #timeout-ms = <5>;
+            key-positions = <3 4>;
+            bindings = <&kp F3>;
+        };       
+        combo_F4 {
+            #timeout-ms = <5>;
             key-positions = <4 5>;
-            bindings = <&kp LC(C)>;
+            bindings = <&kp F4>;
         };
-
-        combo_f5 {
-            key-positions = <61 62>;
+        combo_F5 {
+            #timeout-ms = <5>;
+            key-positions = <5 6>;
             bindings = <&kp F5>;
         };
-
-        combo_f12 {
-            key-positions = <47 63>;
+        combo_F6 {
+            #timeout-ms = <5>;
+            key-positions = <6 20>;
+            bindings = <&kp F6>;
+        };
+        combo_F7 {
+            #timeout-ms = <5>;
+            key-positions = <8 9>;
+            bindings = <&kp F7>;
+        };
+        combo_F8 {
+            #timeout-ms = <5>;
+            key-positions = <9 10>;
+            bindings = <&kp F8>;
+        };
+        combo_F9 {
+            #timeout-ms = <5>;
+            key-positions = <10 11>;
+            bindings = <&kp F9>;
+        };
+        combo_F10 {
+            #timeout-ms = <5>;
+            key-positions = <11 12>;
+            bindings = <&kp F10>;
+        };
+        combo_F11 {
+            #timeout-ms = <5>;
+            key-positions = <12 13>;
+            bindings = <&kp F11>;
+        };
+         combo_F12 {
+            #timeout-ms = <5>;
+            key-positions = <13 14>;
             bindings = <&kp F12>;
-        };
-
-        combo_ctrlv {
-            bindings = <&kp LC(V)>;
-            key-positions = <5 6>;
-        };
+        };       
     };
 */
     keymap0: keymap {
