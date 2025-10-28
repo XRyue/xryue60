@@ -23,6 +23,6 @@ include:
      snippet: studio-rpc-usb-uart
    - board: nrfmicro_13
      shield: xryue60_right
-     snippet: studio-rpc-usb-uart   
+      
    - board: nice_nano_v2
      shield: settings_reset
