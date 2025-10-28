@@ -18,10 +18,8 @@
     xryue60_layout: xryue60_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "xryue60";
-
         kscan = <&kscan0>;
         transform = <&default_transform>;
-
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
             , <&key_physical_attrs 100 100  100    0       0     0     0>
@@ -123,11 +121,6 @@
         steps = <48>;
         //status = "okay";
     };
-
-zephyr_udc0: &usbd { 
-    compatible = "nordic,nrf-usbd"; 
-    status = "okay"; 
-};
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
