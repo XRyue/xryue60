@@ -21,6 +21,9 @@ col-gpios
 			, <&gpio0 29 GPIO_ACTIVE_HIGH>
 			;
 };
-&right_encoder {
-    status = "okay";
-};
+&right_encoder_encoder {
+        a-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        //steps = <48>;
+        status = "okay";
+    };
