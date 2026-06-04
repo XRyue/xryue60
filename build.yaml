@@ -18,11 +18,11 @@
 #
 ---
 include:
-   - board: nrfmicro/nrf52840//zmk
+   - board: nrfmicro/nrf52840/zmk
      shield: xryue60_left
      #snippet: studio-rpc-usb-uart
-   - board: nrfmicro/nrf52840//zmk
+   - board: nrfmicro/nrf52840/zmk
      shield: xryue60_right
      #snippet: studio-rpc-usb-uart   
-   - board: nice_nano//zmk
+   - board: nice_nano/zmk
      shield: settings_reset
