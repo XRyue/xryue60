@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/hid_indicators.h>
 #include "xryue60.dtsi"
 
 &kscan0 {
@@ -34,4 +35,26 @@ adc_battery: adc_battery {
     output-ohms = <2000000>;         // 对应你的 R11 (2MΩ)
     full-ohms = <2820000>;           // 对应你的 R10 + R11 (820kΩ + 2MΩ)
 };
+
+leds {
+        compatible = "gpio-leds";
+/*
+        num_lock_led: num_lock_led {
+            gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;
+        };
+ */
+        caps_lock_led: caps_lock_led {
+            gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
+        };
+    };
+
+
+	indicators {
+        compatible = "zmk,indicator-leds";
+          caps_lock_indicator: caps_lock {
+            indicator = <HID_INDICATOR_CAPS_LOCK>;
+            leds = <&caps_lock_led>;
+        };
+    };
+
 };
