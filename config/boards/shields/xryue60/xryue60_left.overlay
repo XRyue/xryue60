@@ -24,4 +24,14 @@ col-gpios
         status = "okay";
     };
 
-
+/ {
+chosen {
+zmk,battery = &adc_battery;
+};
+adc_battery: adc_battery {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 2>;          // 因为使用了 P0.04 / AIN2
+    output-ohms = <2000000>;         // 对应你的 R11 (2MΩ)
+    full-ohms = <2820000>;           // 对应你的 R10 + R11 (820kΩ + 2MΩ)
+};
+};
