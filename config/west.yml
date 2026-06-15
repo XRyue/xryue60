@@ -16,6 +16,6 @@ manifest:
       remote: joelspadin
       revision: main
   self:
-  path: .
-    #path: config
+  #path: .
+    path: config
     
