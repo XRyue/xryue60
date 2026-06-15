@@ -3,7 +3,7 @@ id: xryue60
 name: XRyue60
 type: shield
 url: https://oshwhub.com/joba
-requires: [nrfmicro_13_52840]
+requires: [pro_micro]
 features:
   - keys
   - display
