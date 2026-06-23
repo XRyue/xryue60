@@ -18,9 +18,8 @@ col-gpios
 			, <&gpio0 29 GPIO_ACTIVE_HIGH>
 			;
 };
-&left_encoder {
-    status = "okay";
-};
+
+
 
 / {
 chosen {
@@ -32,6 +31,21 @@ adc_battery: adc_battery {
     output-ohms = <2000000>;         // 对应你的 R11 (2MΩ)
     full-ohms = <2820000>;           // 对应你的 R10 + R11 (820kΩ + 2MΩ)
 };
+
+  left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 3 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        b-gpios = <&gpio1 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        steps = <80>;
+        status = "okay";
+    };
+
+sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <80>;
+    };
+
 
 leds {
         compatible = "gpio-leds";
