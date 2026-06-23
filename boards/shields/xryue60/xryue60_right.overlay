@@ -24,5 +24,5 @@ col-gpios
 /*
 &right_encoder {
     status = "okay";
-	 */
 };
+ */
