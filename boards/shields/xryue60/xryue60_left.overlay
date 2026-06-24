@@ -36,14 +36,14 @@ adc_battery: adc_battery {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 3 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
         b-gpios = <&gpio1 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        steps = <80>;
+        steps = <20>;
         status = "okay";
     };
 
 sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        triggers-per-rotation = <80>;
+        triggers-per-rotation = <20>;
     };
 
 
